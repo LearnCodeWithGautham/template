@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Create a new Account</title>
+
+    <style>
+
+      .divider{
+
+        position: relative;
+        text-align: center;
+        margin: 15px 0px;
+      }
+
+      .divider span{
+        padding: 8px;
+        position: relative;
+        font-size: 15px;
+        z-index: 20 !important;
+      }
+
+      .divider::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        border-bottom: 2px solid #ddd;
+        top: 50%;
+        left: 0px;
+        z-index: 1 !important;
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <!-- going to start singup design  -->
+
+    <div class="container">
+
+      <div class="card bg-light">
+
+        <div class="card-body mx-auto">
+
+          <h4 class="card-title mt-3 text-center">Create Account</h4>
+          <p class="text-center">Get Started with your free Account.</p>
+
+          <a href="#!" class="btn btn-block btn-danger">
+            <i class="fab fa-google"></i>
+            Login via Google</a>
+            
+            <a href="#!" class="btn btn-block btn-primary">
+              <i class="fab fa-facebook"></i>
+              Login via Facebook</a>
+
+              <p class="divider">
+                <span class="bg-light">OR</span>
+              </p>
+
+              <!-- form started  -->
+
+              <!-- name field  -->
+              <form action="#!">
+            
+                <form>
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                      </span>
+                    </div>
+                    <input 
+                    type="text"
+                     class="form-control" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp"
+                     placeholder="Enter Name">
+                    </div>
+
+                     <!-- Email field  -->
+             
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-envelope"></i>
+                      </span>
+                    </div>
+                    <input 
+                    type="email"
+                     class="form-control" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp"
+                     placeholder="Enter Email">
+                    </div>
+
+                    <!-- phone field  -->
+
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-phone"></i>
+                        </span>
+                      </div>
+                      <select class="custom-select" style="max-width: 80px;">
+                        <option>+91</option>
+                        <option>+92</option>
+                        <option>+93</option>
+                      </select>
+
+                      <input type="number" class="form-control" placeholder="Enter phonenumber">
+
+                    </div>
+
+                    <!-- user type field  -->
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-building"></i>
+                        </span>
+                      </div>
+                      <select class="form-control">
+                        <option selected disabled>-- Select User Type--</option>
+                        <option>Student</option>
+                        <option>Teacher</option>
+                        <option>Admin</option>
+                      </select>
+                      </div>
+
+                        <!-- Password field  -->
+              
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                      </span>
+                    </div>
+                    <input 
+                    type="password"
+                     class="form-control" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp"
+                     placeholder="Enter Password">
+                    </div>
+
+                    <!-- Repeat Password field  -->
+              
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-lock-open"></i>
+                      </span>
+                    </div>
+                    <input 
+                    type="password"
+                     class="form-control" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp"
+                     placeholder="Repeat Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-success mt-3">Create</button>
+
+                    <p class="text-center mt-3">Have an Account? <a href="login.html">Log In</a></p>
+
+                    </form>
+
+
+
+              <!-- End of form  -->
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

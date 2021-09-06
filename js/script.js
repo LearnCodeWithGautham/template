@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    //.....
+
+    $(" .menus li a").click(function(e){
+      // alert("clicked");
+
+      // how to proceed
+
+     let target = $(this).attr("href");
+
+     $("html,body").animate({
+        scrollTop: $(target).offset().top ,
+     },1000);
+
+     e.preventDefault();
+    });
+});
